@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/gradient_bg.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable-v24/ic_arrow_back_black_24dp.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable-v24/ic_chevron_left_black_24dp.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable-v24/ic_circle.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable-v24/ic_menu_gallery.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable-v24/ic_menu_send.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable-v24/ic_plus.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable-v24/ic_science_thermometer.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/non_selected_item_dot.xml" value="0.154" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.277" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/ic_baseline_graphic_eq_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.27895812988281254" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2618377685546875" />
+        <entry key="app/src/main/res/layout/activity_mainpage.xml" value="0.2890648883322011" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1526268115942029" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25007171630859376" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
