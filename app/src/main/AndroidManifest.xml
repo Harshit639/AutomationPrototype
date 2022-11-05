@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.reflowoct">
+    package="com.example.reflowoct"
+    >
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+
 
     <application
         android:allowBackup="true"
@@ -12,12 +17,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReflowOct"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        >
         <activity
-            android:name=".login"
+            android:name=".testWifi"
             android:exported="false" />
         <activity
-            android:name=".signup"
+            android:name=".roomdetails"
+            android:exported="false" />
+        <activity
+            android:name=".mainpage"
+            android:exported="false" />
+        <activity
+            android:name=".login"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
@@ -27,7 +39,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".mainpage"
+            android:name=".signup"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

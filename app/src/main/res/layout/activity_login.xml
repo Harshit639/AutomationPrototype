@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#EEEEEE"
+    android:background="@color/black"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".login">
 
@@ -16,7 +16,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,7 +25,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="235dp" />
+                android:layout_height="match_parent" />
 
 
             <ImageView
@@ -32,7 +33,7 @@
                 android:layout_width="249dp"
                 android:layout_height="220dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/infinity" />
+                android:background="@drawable/infinitylogo" />
 
 
         </RelativeLayout>
@@ -49,7 +50,7 @@
                 android:layout_gravity="center"
                 android:text="Login"
                 android:textAllCaps="true"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -84,12 +85,13 @@
                     android:background="#CACACA" />
 
                 <EditText
+                    android:id="@+id/loginemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="User Name"
                     android:inputType="textEmailAddress"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:textColorHint="@color/hintColor"></EditText>
 
             </LinearLayout>
@@ -118,12 +120,13 @@
                     android:background="#CACACA" />
 
                 <EditText
+                    android:id="@+id/loginpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:textColorHint="@color/hintColor"></EditText>
 
             </LinearLayout>
@@ -140,6 +143,7 @@
                 android:textStyle="normal" />
 
             <TextView
+                android:id="@+id/loginbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -156,12 +160,15 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="281dp"
-                android:layout_height="72dp"
+                android:id="@+id/toSignup"
+                android:layout_width="251dp"
+                android:layout_height="31dp"
+
 
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
-                android:padding="13dp"
+
+                android:layout_marginTop="10dp"
                 android:text="Don't have an account, Sign Up Now!"
                 android:textColor="@color/hintColor"
                 android:textSize="14dp"

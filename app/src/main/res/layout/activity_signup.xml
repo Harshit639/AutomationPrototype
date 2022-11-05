@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#EEEEEE"
+    android:background="@color/black"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".login">
 
@@ -16,20 +16,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="175dp">
+            android:layout_height="230dp">
 
 
             <ImageView
                 android:id="@+id/image_view"
-                android:layout_width="228dp"
-                android:layout_height="174dp"
+                android:layout_width="249dp"
+                android:layout_height="220dp"
                 android:layout_centerInParent="true"
-                android:background="@drawable/infinity" />
+                android:background="@drawable/infinitylogo" />
 
 
         </RelativeLayout>
@@ -40,7 +42,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
 
-            android:padding="20dp">
+            android:padding="20dp"
+            >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,7 +51,7 @@
                 android:layout_gravity="center"
                 android:text="Sign UP"
                 android:textAllCaps="true"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -57,13 +60,13 @@
                 android:layout_height="8dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/gradient_row_bg" />
+                android:background="#cb6ce6" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/custom_edit_text"
                 android:padding="10dp">
@@ -83,46 +86,13 @@
                     android:background="#CACACA" />
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:hint="User Name"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/textColor"
-                    android:textColorHint="@color/hintColor"></EditText>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/custom_edit_text"
-                android:padding="10dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/ic_password" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="5dp"
-                    android:background="#CACACA" />
-
-                <EditText
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="Email"
-                    android:inputType="textPassword"
-                    android:textColor="@color/textColor"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
                     android:textColorHint="@color/hintColor"></EditText>
 
             </LinearLayout>
@@ -151,46 +121,13 @@
                     android:background="#CACACA" />
 
                 <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:hint="Mobile Number"
-                    android:inputType="textPassword"
-                    android:textColor="@color/textColor"
-                    android:textColorHint="@color/hintColor"></EditText>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/custom_edit_text"
-                android:padding="10dp">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/ic_password" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="5dp"
-                    android:background="#CACACA" />
-
-                <EditText
+                    android:id="@+id/passwd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:hint="Password"
                     android:inputType="textPassword"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:textColorHint="@color/hintColor"></EditText>
 
             </LinearLayout>
@@ -224,7 +161,7 @@
                     android:background="@android:color/transparent"
                     android:hint="Confirm Password"
                     android:inputType="textPassword"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/white"
                     android:textColorHint="@color/hintColor"></EditText>
 
             </LinearLayout>
@@ -232,6 +169,7 @@
 
 
             <TextView
+                android:id="@+id/buttonregister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -248,12 +186,15 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="281dp"
-                android:layout_height="72dp"
+                android:id="@+id/toLogin"
+                android:layout_width="295dp"
+                android:layout_height="27dp"
 
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
-                android:padding="13dp"
+                android:layout_marginTop="14dp"
+                android:paddingLeft="15dp"
+
                 android:text="Already have an account, Log In Now!"
                 android:textColor="@color/hintColor"
                 android:textSize="14dp"

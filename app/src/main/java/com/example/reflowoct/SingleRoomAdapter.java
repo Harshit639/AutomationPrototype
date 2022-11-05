@@ -1,7 +1,7 @@
 package com.example.reflowoct;
 
+
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +12,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.MyViewHolder> {
+/**
+ * Smart Home
+ * https://github.com/quintuslabs/SmartHome
+ * Created on 27-OCT-2019.
+ * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
+ */
+
+public class SingleRoomAdapter extends RecyclerView.Adapter<SingleRoomAdapter.MyViewHolder> {
 
     Context context;
     private List<Room> roomList;
 
-    public RoomAdapter(List<Room> roomList, Context context) {
+    public SingleRoomAdapter(List<Room> roomList, Context context) {
         this.roomList = roomList;
         this.context = context;
     }
@@ -25,7 +32,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.MyViewHolder> 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_mainpage, parent, false);
+                .inflate(R.layout.single_room_row, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -36,14 +43,6 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.MyViewHolder> 
 
         holder.title.setText(room.getName());
 
-        holder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, roomdetails.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(intent);
-            }
-        });
 
     }
 
@@ -62,5 +61,5 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.MyViewHolder> 
             cardView = view.findViewById(R.id.card_view);
 
         }
-    }}
-
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "142548271057",
+    "firebase_url": "https://reflow-v1-1-default-rtdb.firebaseio.com",
+    "project_id": "reflow-v1-1",
+    "storage_bucket": "reflow-v1-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142548271057:android:6a1b8332f8fa3f9caeaaf0",
+        "android_client_info": {
+          "package_name": "com.example.reflowoct"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142548271057-5ilo0ik2q5j3potbso07as7qo3hn9rpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn_TOcR-_etdlTIX5MN3dgfK9nlv7nr_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142548271057-5ilo0ik2q5j3potbso07as7qo3hn9rpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

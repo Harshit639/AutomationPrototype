@@ -3,25 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.2015625" />
+        <entry key="app/src/main/res/drawable-v24/custom_edit_text.xml" value="0.2735" />
         <entry key="app/src/main/res/drawable-v24/gradient_bg.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable-v24/gradient_row_bg.xml" value="0.2735" />
         <entry key="app/src/main/res/drawable-v24/ic_arrow_back_black_24dp.xml" value="0.12" />
         <entry key="app/src/main/res/drawable-v24/ic_chevron_left_black_24dp.xml" value="0.15" />
         <entry key="app/src/main/res/drawable-v24/ic_circle.xml" value="0.12" />
         <entry key="app/src/main/res/drawable-v24/ic_menu_gallery.xml" value="0.15" />
         <entry key="app/src/main/res/drawable-v24/ic_menu_send.xml" value="0.15" />
+        <entry key="app/src/main/res/drawable-v24/ic_password.xml" value="0.2735" />
         <entry key="app/src/main/res/drawable-v24/ic_plus.xml" value="0.12" />
         <entry key="app/src/main/res/drawable-v24/ic_science_thermometer.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_user.xml" value="0.2735" />
         <entry key="app/src/main/res/drawable-v24/non_selected_item_dot.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.277" />
         <entry key="app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.12" />
         <entry key="app/src/main/res/drawable/ic_baseline_graphic_eq_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.27895812988281254" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2618377685546875" />
-        <entry key="app/src/main/res/layout/activity_mainpage.xml" value="0.2890648883322011" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1526268115942029" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22160491943359378" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15330810546875" />
+        <entry key="app/src/main/res/layout/activity_mainpage.xml" value="0.1460259479025136" />
+        <entry key="app/src/main/res/layout/activity_roomdetails.xml" value="0.15437860903532608" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.22473374518795283" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25007171630859376" />
+        <entry key="app/src/main/res/layout/activity_test_wifi.xml" value="0.2453125" />
+        <entry key="app/src/main/res/layout/activity_wifi_manager.xml" value="0.2390625" />
+        <entry key="app/src/main/res/layout/registration.xml" value="0.1539855072463768" />
+        <entry key="app/src/main/res/layout/single_room_row.xml" value="0.11375579833984373" />
       </map>
     </option>
   </component>
