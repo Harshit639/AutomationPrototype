@@ -39,6 +39,7 @@
 <!--                        app:civ_circle_background_color="@color/white" />-->
 
                     <TextView
+                        android:id="@+id/hellouser"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-thin"
@@ -168,7 +169,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_centerInParent="true"
-                        android:background="@drawable/ic_baseline_settings_24" />
+                        android:background="@drawable/ic_baseline_perm_identity_24" />
                 </RelativeLayout>
             </LinearLayout>
 

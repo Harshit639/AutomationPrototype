@@ -13,7 +13,8 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="160dp">
+        android:layout_height="160dp"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#28282B"
+            android:background="#1c1c1c"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -39,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif-thin"
+                android:fontFamily="@font/alike_angular"
                 android:text="Bed Room"
                 android:textColor="#cb6ce6"
                 android:textSize="20dp"

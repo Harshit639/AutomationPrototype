@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +23,7 @@ public class login extends AppCompatActivity {
 
     private EditText emailTextView, passwordTextView;
     private TextView Btn , tosignup;
-//    private ProgressBar progressbar;
+    private ProgressBar progressbar;
 
 
     private FirebaseAuth mAuth;
@@ -40,7 +41,7 @@ public class login extends AppCompatActivity {
         passwordTextView = findViewById(R.id.loginpassword);
         Btn = findViewById(R.id.loginbutton);
         tosignup = findViewById(R.id.toSignup);
-//        progressbar = findViewById(R.id.progressBar);
+        progressbar = findViewById(R.id.progressBar3);
 
         // Set on Click Listener on Sign-in button
         Btn.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +68,9 @@ public class login extends AppCompatActivity {
     {
 
         // show the visibility of progress bar to show loading
-//        progressbar.setVisibility(View.VISIBLE);
+        progressbar.setVisibility(View.VISIBLE);
+        Btn.setVisibility(View.INVISIBLE);
+
 
         // Take the value of two edit texts in Strings
         String email, password;
@@ -77,17 +80,21 @@ public class login extends AppCompatActivity {
         // validations for input email and password
         if (TextUtils.isEmpty(email)) {
             Toast.makeText(getApplicationContext(),
-                            "Please enter email!!",
+                            "Please enter email!",
                             Toast.LENGTH_LONG)
                     .show();
+            progressbar.setVisibility(View.INVISIBLE);
+            Btn.setVisibility(View.VISIBLE);
             return;
         }
 
         if (TextUtils.isEmpty(password)) {
             Toast.makeText(getApplicationContext(),
-                            "Please enter password!!",
+                            "Please enter password!",
                             Toast.LENGTH_LONG)
                     .show();
+            progressbar.setVisibility(View.INVISIBLE);
+            Btn.setVisibility(View.VISIBLE);
             return;
         }
 
@@ -100,32 +107,41 @@ public class login extends AppCompatActivity {
                                     @NonNull Task<AuthResult> task)
                             {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(getApplicationContext(),
-                                                    "Login successful!!",
-                                                    Toast.LENGTH_LONG)
-                                            .show();
+                                    if(mAuth.getCurrentUser().isEmailVerified()) {
+                                        Toast.makeText(getApplicationContext(),
+                                                        "Login successful!",
+                                                        Toast.LENGTH_LONG)
+                                                .show();
 
-                                    // hide the progress bar
-//                                    progressBar.setVisibility(View.GONE);
+                                        // hide the progress bar
+                                        progressbar.setVisibility(View.GONE);
 
-                                    // if sign-in is successful
-                                    // intent to home activity
-                                    Intent intent
-                                            = new Intent(login.this,
-                                            mainpage.class);
-                                    startActivity(intent);
+                                        // if sign-in is successful
+                                        // intent to home activity
+                                        Intent intent
+                                                = new Intent(login.this,
+                                                mainpage.class);
+                                        startActivity(intent);
+                                    }else{
+                                        Toast.makeText(getApplicationContext(),
+                                                        "Please Verify Email!",
+                                                        Toast.LENGTH_LONG)
+                                                .show();
+                                    }
                                 }
 
                                 else {
 
                                     // sign-in failed
                                     Toast.makeText(getApplicationContext(),
-                                                    "Login failed!!",
+                                                    "Login failed!",
                                                     Toast.LENGTH_LONG)
                                             .show();
 
                                     // hide the progress bar
-//                                    progressbar.setVisibility(View.GONE);
+                                    progressbar.setVisibility(View.GONE);
+                                    Btn.setVisibility(View.VISIBLE);
+
                                 }
                             }
                         });
