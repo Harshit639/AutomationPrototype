@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
@@ -42,6 +43,7 @@ public class SingleRoomAdapter extends RecyclerView.Adapter<SingleRoomAdapter.My
         Room room = roomList.get(position);
 
         holder.title.setText(room.getName());
+        holder.photu.setImageResource(room.getphoto());
 
 
     }
@@ -54,11 +56,13 @@ public class SingleRoomAdapter extends RecyclerView.Adapter<SingleRoomAdapter.My
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
         public CardView cardView;
+        public ImageView photu;
 
         public MyViewHolder(View view) {
             super(view);
             title = view.findViewById(R.id.title);
             cardView = view.findViewById(R.id.card_view);
+            photu = view.findViewById(R.id.roomicon);
 
         }
     }

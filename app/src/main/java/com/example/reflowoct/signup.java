@@ -43,6 +43,7 @@ public class signup extends AppCompatActivity {
 //            i.putExtra("Email",user.getEmail().toString());
 //            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(i);
+            finish();
         } else {
             // User is signed out
             Log.d("ds", "onAuthStateChanged:signed_out");
@@ -74,6 +75,7 @@ public class signup extends AppCompatActivity {
             {
                     Intent intent = new Intent(signup.this,login.class);
                     startActivity(intent);
+                    finish();
             }
         });
 
@@ -146,8 +148,9 @@ public class signup extends AppCompatActivity {
                                                         "Registration successful!, Please verify your email!",
                                                         Toast.LENGTH_LONG)
                                                 .show();
-                                        Intent intent = new Intent(signup.this, login.class);
+                                        Intent intent = new Intent(signup.this, EmailVerification.class);
                                         startActivity(intent);
+                                       finish();
                                     } else {
                                         Toast.makeText(getApplicationContext(),
                                                         task.getException().getMessage(),

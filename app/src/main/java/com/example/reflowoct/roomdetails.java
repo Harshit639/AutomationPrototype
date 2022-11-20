@@ -53,11 +53,11 @@ public class roomdetails extends AppCompatActivity {
     }
 
     private void prepareRoomData() {
-        Room room = new Room("1", "Light");
+        Room room = new Room("1", "Light",R.drawable.bedroom);
         roomList.add(room);
-        room = new Room("2", "Fan");
+        room = new Room("2", "Fan",R.drawable.bedroom);
         roomList.add(room);
-        room = new Room("1", "Air Conditioner");
+        room = new Room("1", "Air Conditioner",R.drawable.bedroom);
         roomList.add(room);
 
 

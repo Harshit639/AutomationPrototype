@@ -30,16 +30,16 @@
 
             <ImageView
                 android:id="@+id/image_view"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_double_bed" />
+                android:layout_width="178dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="-27dp"
+                android:layout_gravity="center" />
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="-20dp"
                 android:fontFamily="@font/alike_angular"
                 android:text="Bed Room"
                 android:textColor="#cb6ce6"

@@ -122,11 +122,15 @@ public class login extends AppCompatActivity {
                                                 = new Intent(login.this,
                                                 mainpage.class);
                                         startActivity(intent);
+                                        finish();
                                     }else{
                                         Toast.makeText(getApplicationContext(),
                                                         "Please Verify Email!",
                                                         Toast.LENGTH_LONG)
                                                 .show();
+
+                                        progressbar.setVisibility(View.GONE);
+                                        Btn.setVisibility(View.VISIBLE);
                                     }
                                 }
 

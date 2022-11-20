@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
@@ -35,6 +36,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.MyViewHolder> 
         Room room = roomList.get(position);
 
         holder.title.setText(room.getName());
+        holder.photu.setImageResource(room.getphoto());
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,11 +57,13 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.MyViewHolder> 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
         public CardView cardView;
+        public ImageView photu;
 
         public MyViewHolder(View view) {
             super(view);
             title = view.findViewById(R.id.title);
             cardView = view.findViewById(R.id.card_view);
+            photu = view.findViewById(R.id.image_view);
 
         }
     }}
