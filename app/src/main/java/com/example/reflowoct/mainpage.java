@@ -32,6 +32,7 @@ public class mainpage extends AppCompatActivity implements BottomNavigationView.
 //    FirebaseUser user;
     HomeFragment fragment = new HomeFragment();
     profilefragment profilefragment = new profilefragment();
+    basichome basichome = new basichome();
     private BottomNavigationView mBtmView;
 
 
@@ -52,7 +53,7 @@ public class mainpage extends AppCompatActivity implements BottomNavigationView.
 
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container_layout,fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container_layout,basichome).commit();
 
 
 
@@ -117,6 +118,10 @@ public class mainpage extends AppCompatActivity implements BottomNavigationView.
 
         }
         if(item.getItemId()==R.id.home){
+            item.setChecked(item.isChecked());
+            getSupportFragmentManager().beginTransaction().replace(R.id.container_layout,basichome).commit();
+        }
+        if(item.getItemId()==R.id.devices){
             item.setChecked(item.isChecked());
             getSupportFragmentManager().beginTransaction().replace(R.id.container_layout,fragment).commit();
         }

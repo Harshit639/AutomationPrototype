@@ -14,6 +14,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="160dp"
+        android:elevation="10dp"
         >
 
         <RelativeLayout
@@ -32,8 +33,8 @@
                 android:id="@+id/image_view"
                 android:layout_width="178dp"
                 android:layout_height="135dp"
-                android:layout_marginTop="-27dp"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:layout_marginTop="-27dp" />
 
             <TextView
                 android:id="@+id/title"

@@ -46,8 +46,19 @@ public class roomdetails extends AppCompatActivity {
         adddevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                Intent intents = new Intent(getApplicationContext(), webactivity.class);
+                startActivity(intents);
+                finish();
+
                 Intent intent = new Intent(Settings.Panel.ACTION_WIFI);
-                startActivityForResult(intent,1);
+                startActivity(intent);
+
+
+
+
+
             }
         });
     }

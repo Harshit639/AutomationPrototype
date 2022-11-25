@@ -37,6 +37,7 @@ public class HomeFragment extends Fragment {
     private RoomAdapter mAdapter;
     private TextView hellouser;
     FirebaseUser user;
+    TextView vtn;
 
 //    RelativeLayout home_rl, time_rl, setting_rl, scene_rl;
 
@@ -82,6 +83,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         user = FirebaseAuth.getInstance().getCurrentUser();
         roomList = new ArrayList<>();
+        vtn = view.findViewById(R.id.more);
 
         Log.i("username",user.getDisplayName().toString());
         Log.i("email",user.getEmail().toString());
@@ -91,7 +93,7 @@ public class HomeFragment extends Fragment {
 //        scene_rl = view.findViewById(R.id.scene_rl);
 //        setting_rl = view.findViewById(R.id.setting_rl);
          hellouser = view.findViewById(R.id.hellouser);
-         hellouser.setText("Hi, "+user.getDisplayName().toString());
+//         hellouser.setText("Hi, "+user.getDisplayName().toString());
 
         recyclerView = view.findViewById(R.id.recycler_view);
 //
@@ -122,6 +124,15 @@ public class HomeFragment extends Fragment {
 //        Log.i("email",email);
 
         prepareRoomData();
+//        vtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                FirebaseAuth.getInstance().signOut();
+//                Intent intent = new Intent(getActivity(), login.class);
+//                startActivity(intent);
+//                getActivity().finish();
+//            }
+//        });
         return view;
     }
 
@@ -136,6 +147,8 @@ public class HomeFragment extends Fragment {
         roomList.add(room);
         room = new Room("1", "Bathroom",R.drawable.bathroom);
         roomList.add(room);
+
+
 //        room = new Room("2", "Kitchen");
 //        roomList.add(room);
 //        room = new Room("1", "BedRoom");

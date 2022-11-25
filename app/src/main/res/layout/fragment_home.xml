@@ -2,13 +2,30 @@
    https://github.com/quintuslabs/SmartHome
    Created on 27-OCT-2019.
    Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com-->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_bar_menu"
+            app:navigationIcon="@drawable/ic_baseline_perm_identity_24"
+            app:title="Sweet Home"
+            android:background="@color/black"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,25 +54,6 @@
                     <!--                        android:src="@drawable/ic_profile_user"-->
                     <!--                        app:civ_border_color="@color/hintColor"-->
                     <!--                        app:civ_circle_background_color="@color/white" />-->
-
-                    <TextView
-                        android:id="@+id/hellouser"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-thin"
-                        android:text="Hi, Harshit"
-                        android:textColor="@color/white"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-thin"
-                        android:text="Welcome to your home"
-                        android:textColor="@color/white_70"
-                        android:textSize="16dp"
-                        android:textStyle="bold" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recycler_view"
@@ -176,4 +174,4 @@
 
 <!--        </LinearLayout>-->
     </RelativeLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

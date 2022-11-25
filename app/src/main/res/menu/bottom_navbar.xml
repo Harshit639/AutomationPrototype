@@ -7,8 +7,8 @@
         android:title="Home"
         ></item>
     <item
-        android:id="@+id/time"
-        android:icon="@drawable/ic_baseline_access_time_24"
+        android:id="@+id/devices"
+        android:icon="@drawable/ic_baseline_cast_24"
         android:title="Time"
         ></item>
     <item
@@ -18,7 +18,7 @@
         ></item>
     <item
         android:id="@+id/analysis"
-        android:icon="@drawable/ic_baseline_graphic_eq_24"
+        android:icon="@drawable/ic_baseline_access_time_24"
         android:title="Analysis"
         ></item>
     <item
